@@ -1,5 +1,5 @@
 // helloWorld function 
-function helloWorld(input) {
+function helloWorld() {
     return "Hello, World!";
 }
 
@@ -13,5 +13,5 @@ function plusOne(num) {
 // sayHello function
 
 function sayHello() {
-
+    return "";
 }
