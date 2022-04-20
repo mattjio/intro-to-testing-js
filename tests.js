@@ -29,6 +29,9 @@ describe('sayHello', function () {
     it("should return 'Hello Alex' when given 'Alex' as a parameter", function () {
         expect(sayHello("Alex")).toBe("Hello Alex");
     });
+    it("should return 'Hello Pat' when given 'Pat' as a parameter", function () {
+        expect(sayHello("Pat")).toBe("Hello Pat");
+    });
 })
 
 // plusOne
