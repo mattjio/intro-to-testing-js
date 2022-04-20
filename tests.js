@@ -23,8 +23,8 @@ describe('sayHello', function () {
     it('should return a string when called', function () {
         expect(typeof sayHello()).toBe('string');
     });
-    it("should return 'Hello Jane' when called", function () {
-        expect(sayHello()).toBe("Hello Jane");
+    it("should return 'Hello Jane' when given 'Jane' as a parameter ", function () {
+        expect(sayHello("Jane")).toBe("Hello Jane");
     });
     it("should return 'Hello Alex' when given 'Alex' as a parameter", function () {
         expect(sayHello("Alex")).toBe("Hello Alex");
@@ -32,6 +32,15 @@ describe('sayHello', function () {
     it("should return 'Hello Pat' when given 'Pat' as a parameter", function () {
         expect(sayHello("Pat")).toBe("Hello Pat");
     });
+    it("should return 'Hello World' when I say so", function () {
+        expect(sayHello()).toBe("Hello World");
+    });
+    it("should return 'Hello World' when given the parameter of true", function () {
+        expect(sayHello(true)).toBe("Hello World");
+    });
+    it("should return 'Hello World' when given the parameter of false", function () {
+        expect(sayHello(false)).toBe("Hello World")
+    })
 })
 
 // plusOne

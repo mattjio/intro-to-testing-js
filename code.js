@@ -13,10 +13,9 @@ function plusOne(num) {
 // sayHello function
 
 function sayHello(input) {
-    if (!input) {
-        return "Hello Jane";
+    if (typeof input === "undefined" || typeof input === "boolean")  {
+        return "Hello World";
     } else {
         return "Hello " + input;
     }
-
 }
